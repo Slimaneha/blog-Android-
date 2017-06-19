@@ -172,8 +172,23 @@ li {
 .img-carte{
     margin-top: 3pc;
 }
+/*Page Contact */
+.newsletter{
+    width:440px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 5em;
+    border-bottom: solid 1px green;
+    color: green;
+    text-align: center;
 
+}
+.jumbotron-fluid{
+    margin-top: 2em;
 
+}
+newsletter
 
 
 
