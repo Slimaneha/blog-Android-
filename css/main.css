@@ -124,21 +124,64 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    
+h6 {}
+
+li {
+    list-style: none;
+    margin-bottom: 2em;
 }
 
 
 /*Start OF HEADER  */
 
+
 /*End Rules Header */
 
 
+/*Satrt of css Contenue index.html*/
 
-/*Satrt of css Contenue */
+.carousel {
+    width: 80%;
+    margin-top: 5em;
+    margin-left: 10em;
+}
+
+.gauche {
+    float: right;
+    width: 30%;
+    margin-top: 4em;
+    margin-right: 2em;
+}
+
+.gauche ul li {
+    list-style: none;
+}
+
+.centre {
+    width: 60%;
+    margin-top: 4em;
+    
+}
+
+.red{
+    background-color: red;
+}
+.card{
+    text-align: center;
+}
+.img-carte{
+    margin-top: 3pc;
+}
 
 
 
+
+
+
+
+@media (max-width:1000px){
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
