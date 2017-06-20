@@ -106,6 +106,9 @@ textarea {
 
 
 /*class Type Css Centre couleur ect .. */
+a{
+    color: black;
+}
 body{
     color: black;
 }
@@ -203,7 +206,16 @@ a {
 }
 
 
+/*PAGES TYPE ARTICLE */
 
+fix{
+    width: 30%;
+    position: fixed;
+    
+}
+.text-ar{
+    margin-left: 4em;
+}
 /*@media (max-width:1000px){
 
 }*/
