@@ -106,9 +106,14 @@ textarea {
 
 
 /*class Type Css Centre couleur ect .. */
-
+body{
+    color: black;
+}
 .centre {
     text-align: center;
+}
+p {
+    color: black;
 }
 
 .pl-black {
@@ -124,7 +129,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {}
+h6 {
+    font-family: 'Bitter', serif;
+    color: black;
+}
 
 li {
     list-style: none;
@@ -190,13 +198,15 @@ li {
 }
 newsletter
 
-
-
-
-
-@media (max-width:1000px){
-
+a {
+    color: black;
 }
+
+
+
+/*@media (max-width:1000px){
+
+}*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
