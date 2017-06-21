@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
+   <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet"> 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -55,7 +56,7 @@
   </nav>
   <!--End Nav bare mobile-pc -->
   <div class="containre-fluid red">
-    <marquee>Tout les Actualité en temps réels de vos smarphone Android . <i class="fa fa-newspaper-o" aria-hidden="true"></i> Samsung
+    <marquee id="date_heure"> Tout les Actualité en temps réels de vos smarphone Android . <i class="fa fa-newspaper-o" aria-hidden="true"></i> Samsung
       Galaxy S8 et le Meilleur smarphone aux monde </marquee>
   </div>
   <!--Start of Slider -->
@@ -134,7 +135,7 @@
             <p class="card-text">
               Le Samsung Galaxy S8 et S8 plus élue Meilleur smarphone du monde !!
             </p>
-            <a href="#" class="btn btn-info">lire l'article</a>
+            <a href="#" class="btn btn-info">Lire l'article</a>
           </div>
         </div>
       </a>
@@ -148,7 +149,7 @@
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-info">lire l'article</a>
+            <a href="#" class="btn btn-info">Lire l'article</a>
           </div>
         </div>
       </a>
@@ -160,9 +161,45 @@
 
   </ul>
 
+ <div class="jumbotron jumbotron-fluid ">
+        <div class="container centre ">
+            <h1 class="display-4">Tenez vous à jours inscription newsletter</h1>
+            <p class="lead centre ">
+                <form class="newsletter" action="post">
+                    <input class="newsletter" type="email" placeholder="E@e.fr"> <br>
+                    <a href="#" class="btn btn-primary btn-lg active fotter float-right" role="button" aria-pressed="true">Go !!</a>
+
+                </form> 
+            </p>
+            <p class="float-right fotter">Slimane Hassani Simplon 	&copy; Roubaix 2017</p>
+        </div>
 
 
+ </div>
 
+
+  
+<script type="text/javascript">
+function compZero(nombre) {
+    return nombre < 10 ? '0' + nombre : nombre;
+}
+ 
+function date_heure() {
+    const infos = new Date();
+ 
+    //Heure
+    document.getElementById('date_heure').innerHTML = 'Il est ' + compZero(infos.getHours()) + ' heures ' + compZero(infos.getMinutes()) + ', ' + compZero(infos.getSeconds());
+ 
+    //Date
+    const mois = new Array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
+    const jours = new Array('dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi');
+    document.getElementById('date_heure').innerHTML += ' et nous sommes le ' + jours[infos.getDay()] + ' ' + infos.getDate() + ' ' + mois[infos.getMonth()] + ' ' + infos.getFullYear() + '.';
+}
+ 
+window.onload = function() {
+   setInterval("date_heure()", 1000); //Actualisation de l'heure
+};
+</script>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
