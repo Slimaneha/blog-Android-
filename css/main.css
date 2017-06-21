@@ -155,13 +155,7 @@ li {
     width: 80%;
     margin-top: 5em;
 }
- .gauche{
-     display: none;
- }
 
-.gauche ul li {
-    list-style: none;
-}
 
 
 
@@ -229,13 +223,8 @@ a {
     font-size: 25px;
 }
 
-@media (min-width:1000px){
 
-  .gauche{
-      display: block;
-  }
 
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
