@@ -19,13 +19,4 @@
       setInterval("date_heure()", 1000); //Actualisation de l'heure
     };
 
-    var Messages = function ()
-
-    function test ()
-
-    alert('Messages Envoyer  Merci pour Votre Aide  !')
- 
-    }
- 
-}
- 
+   
