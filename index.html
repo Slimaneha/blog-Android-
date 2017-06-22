@@ -7,16 +7,17 @@
   <title>Accueil</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">-->
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" href="favicon.ico">
 
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">-->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -47,8 +48,6 @@
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="apk.html">ApK</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -131,39 +130,20 @@
 
   </ul>
 
-  <div class="jumbotron jumbotron-fluid ">
+  <footer class="jumbotron jumbotron-fluid ">
         <div class="container centre ">
            
-            <p class="lead centre ">Slimane Hassani Simplon 	&copy; Roubaix 2017</p>   
+            <p class="lead  ">Slimane Hassani Simplon 	&copy; Roubaix 2017</p>   
                 
 
                 </form>
             </p>
            
         </div>
-    </div>
+    </footer>
 
 
-  <script type="text/javascript">
-    function compZero(nombre) {
-      return nombre < 10 ? '0' + nombre : nombre;
-    }
-
-    function date_heure() {
-      const infos = new Date();
-
-      //Heure
-      document.getElementById('date_heure').innerHTML = 'Il est ' + compZero(infos.getHours()) + ' heures ' + compZero(infos.getMinutes()) + ', ' + compZero(infos.getSeconds());
-
-      //Date
-      const mois = new Array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
-      const jours = new Array('dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi');
-      document.getElementById('date_heure').innerHTML += ' et nous sommes le ' + jours[infos.getDay()] + ' ' + infos.getDate() + ' ' + mois[infos.getMonth()] + ' ' + infos.getFullYear() + '.';
-    }
-
-    window.onload = function () {
-      setInterval("date_heure()", 1000); //Actualisation de l'heure
-    };
+  <s
 
   </script>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

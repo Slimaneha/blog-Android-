@@ -127,6 +127,14 @@ p {
     color: white;
 }
 
+navbar .navbar-toggleable-md .navbar-inverse {
+    background-color: green;
+}
+
+.carousel .slide .container{
+    border: black solid 1px ;
+}
+
 h1,
 h2,
 h3,
@@ -142,7 +150,9 @@ li {
     margin-bottom: 2em;
 }
 
-
+.fix{
+    position: fixed;
+}
 /*Start OF HEADER  */
 
 
@@ -152,12 +162,20 @@ li {
 /*Satrt of css Contenue index.html*/
 
 .carousel {
+    padding-left: 1em;
+    padding-bottom:1em;
+    padding-top: 1em;
     width: 80%;
     margin-top: 5em;
 }
 
+.navbar{
+    margin-bottom: 1em;
+}
 
-
+marquee{
+    padding-bottom: 1em;
+}
 
 .centre {
     width: 60%;
